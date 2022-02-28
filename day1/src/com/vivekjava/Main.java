@@ -6,7 +6,8 @@ public class Main {
         int n = 4;
         int m = 7;
 
-        pattern11(m);
+        pattern12(m);
+        //pattern11(m);
         //pattern10(m);
         //pattern9(m);
         //pattern8(m);
@@ -17,6 +18,34 @@ public class Main {
         //pattern3(n);
         //pattern2(n, m);
         //pattern1(n,m);
+    }
+
+    //butterfly
+    static void pattern12(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            for (int j = 1; j <= (n - i) * 2; j++) {
+                System.out.print("   ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for (int i = n; i > 0; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            for (int j = (n - i) * 2; j >= 1; j--) {
+                System.out.print("   ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
     }
 
     //palindromic number pyramid
