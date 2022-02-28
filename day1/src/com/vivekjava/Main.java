@@ -6,13 +6,27 @@ public class Main {
         int n = 4;
         int m = 7;
 
-        pattern6(m);
+        pattern7(m);
+        //pattern6(m);
         //pattern5(m);
         //pattern4(m);
         //pattern3(n);
         //pattern2(n, m);
         //pattern1(n,m);
     }
+
+    //flyod's triangle
+    static void pattern7(int n) {
+        int counter = 1;
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(counter+" ");
+                counter++;
+            }
+            System.out.println();
+        }
+    }
+
 
     //print 1 to n as left pyramid and revert it
     static void pattern6(int n) {
