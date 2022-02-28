@@ -26,8 +26,28 @@ public class Functions {
             i--;
         } while (i > 4);
         */
-
+        fibonacci(8);
     }
+
+    static void fibonacci(int n) {
+        StringBuilder fibSeries = new StringBuilder();
+        //0 , 1 , 1
+        int prevOne = 0;
+        int prevTwo = 1;
+        int counter = 0;
+        while (counter < n) {
+            // Print the number
+            fibSeries.append(prevOne);
+            fibSeries.append(",");
+            int num3 = prevTwo + prevOne;
+            prevOne = prevTwo;
+            prevTwo = num3;
+            counter++;
+        }
+
+        System.out.println(fibSeries);
+    }
+
 
     //searching great common divisor number
     static void findGCD(int x, int y) {
