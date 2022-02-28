@@ -32,10 +32,11 @@ public class Functions {
     //searching great common divisor number
     static void findGCD(int x, int y) {
         int gcd = 1;
-        String xFactor = "", yFactors = "";
+        StringBuilder xFactor = new StringBuilder();
+        StringBuilder yFactors = new StringBuilder();
         for (int i = 1; i <= x && i <= y; i++) {
-            xFactor += x % i == 0 ? i + "," : "";
-            yFactors += y % i == 0 ? i + "," : "";
+            xFactor.append(x % i == 0 ? i + "," : "");
+            yFactors.append(y % i == 0 ? i + "," : "");
             //returns true if both conditions are satisfied
             if (x % i == 0 && y % i == 0)
                 //storing the variable i in the variable gcd
