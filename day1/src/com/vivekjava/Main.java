@@ -6,7 +6,8 @@ public class Main {
         int n = 4;
         int m = 7;
 
-        pattern10(m);
+        pattern11(m);
+        //pattern10(m);
         //pattern9(m);
         //pattern8(m);
         //pattern7(m);
@@ -18,6 +19,24 @@ public class Main {
         //pattern1(n,m);
     }
 
+    //palindromic number pyramid
+    static void pattern11(int n) {
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
     //number pyramid
     static void pattern10(int n) {
         for (int i = 0; i < n; i++) {
@@ -25,7 +44,7 @@ public class Main {
                 System.out.print(" ");
             }
             for (int j = 0; j < i; j++) {
-                System.out.print(i+" ");
+                System.out.print(i + " ");
             }
             System.out.println();
         }
