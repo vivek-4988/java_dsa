@@ -6,7 +6,9 @@ public class Main {
         int n = 4;
         int m = 7;
 
-        pattern7(m);
+        pattern9(m);
+        //pattern8(m);
+        //pattern7(m);
         //pattern6(m);
         //pattern5(m);
         //pattern4(m);
@@ -15,12 +17,40 @@ public class Main {
         //pattern1(n,m);
     }
 
+    //rhombus pattern
+    static void pattern9(int n) {
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j < n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
+    //0 1 binary left triangle
+    static void pattern8(int n) {
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print(0 + " ");
+                } else {
+                    System.out.print(1 + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     //flyod's triangle
     static void pattern7(int n) {
         int counter = 1;
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                System.out.print(counter+" ");
+                System.out.print(counter + " ");
                 counter++;
             }
             System.out.println();
