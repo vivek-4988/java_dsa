@@ -17,9 +17,27 @@ public class Main {
         //System.out.println(v);
 
         //todo print fibbonacciSum
-        System.out.print("0,1,");
-        printFibbonaciSum(0, 1, 7-2);
+//        System.out.print("0,1,");
+//        printFibbonaciSum(0, 1, 7-2);
+
+        //todo get power of x i.e. x^n
+        int ans = printcalCPower(5, 0);
+        System.out.println(ans);
     }
+
+    private static int printcalCPower(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        if (x == 0) {
+            return 0;
+        }
+
+        int xPower = printcalCPower(x, n - 1);
+        int xPow = x * xPower;
+        return xPow;
+    }
+
 
     //0 , 1 , 1 , 2 , 3 , 5
     private static void printFibbonaciSum(int a, int b, int n) {
