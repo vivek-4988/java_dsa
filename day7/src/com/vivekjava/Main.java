@@ -8,19 +8,73 @@ public class Main {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
-        pattern5(7);
+        pattern7(5);
+    }
+
+    public static void pattern7(int n) {
+        int nst = 1;
+        int nsp = (n * 2) - 3;
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= nst; j++) {
+                System.out.print(" * ");
+            }
+
+            for (int j = 1; j <= nsp; j++) {
+                System.out.print("   ");
+            }
+
+            //todo remove last extra star
+            if (nst == n) {
+                nst = nst - 1;
+            }
+            for (int j = 1; j <= nst; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+
+            nst += 1;
+            nsp -= 2;
+
+        }
+    }
+
+    public static void pattern6(int n) {
+        int nsp = n / 2;
+        int nst = 1;
+        for (int i = 1; i <= n; i++) {
+            //spaces work
+            for (int j = 1; j <= nsp; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= nst; j++) {
+                System.out.print("*");
+            }
+
+            if (i <= n / 2) {
+                nsp -= 1;
+                nst += 2;
+            } else {
+                nst -= 2;
+                nsp += 1;
+            }
+
+            System.out.println();
+
+        }
     }
 
     public static void pattern5(int n) {
         int nsp = 1;
-        int nst  = n/2;
+        int nst = n / 2;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= nst; j++) {
                 System.out.print("*");
             }
 
             //spaces work
-            for (int j = 1; j <= nsp ; j++) {
+            for (int j = 1; j <= nsp; j++) {
                 System.out.print(" ");
             }
 
@@ -28,10 +82,10 @@ public class Main {
                 System.out.print("*");
             }
             System.out.println();
-            if (i <= n/2){
+            if (i <= n / 2) {
                 nsp += 2;
                 nst -= 1;
-            }else{
+            } else {
                 nsp -= 2;
                 nst += 1;
             }
