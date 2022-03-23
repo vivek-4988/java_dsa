@@ -8,8 +8,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         //only for odd number
-        p1(n);
+        //p1(n);
         //p2(n);
+        p1less(n);
     }
 
     //second method
@@ -74,7 +75,7 @@ public class Main {
     public static void space(int size) {
         for (int counter = 0; counter < size; counter++) {
             //Add space
-            System.out.print("   ");
+            System.out.print("  ");
         }
     }
 
@@ -83,15 +84,15 @@ public class Main {
             //include initial space
             space((size * 2) - (i * 2));
             for (int j = i; j >= 1; j--) {
-                System.out.print(" " + j + " ");
+                System.out.print(j + " ");
             }
             if (i >= 2) {
                 space((i - 1) * 2 - 1);
                 for (int j = 1; j <= i; j++) {
-                    System.out.print(" " + j + " ");
+                    System.out.print(j + " ");
                 }
             }
-            System.out.print("\n");
+            System.out.println();
         }
 
         //print bottom half layers
@@ -100,15 +101,15 @@ public class Main {
             space(i * 2);
             //print star
             for (int j = size - i; j >= 1; j--) {
-                System.out.print(" " + j + " ");
+                System.out.print(j + " ");
             }
             if (i + 1 != size) {
                 space(((size - 1) * 2) - (i * 2) - 1);
                 for (int j = 1; j <= size - i; j++) {
-                    System.out.print(" " + j + " ");
+                    System.out.print(j + " ");
                 }
             }
-            System.out.print("\n");
+            System.out.println();
         }
     }
 
@@ -117,12 +118,12 @@ public class Main {
             //include initial space
             space((size * 2) - (i * 2));
             for (int j = i; j >= 1; j--) {
-                System.out.print(" " + j + " ");
+                System.out.print(j + " ");
             }
             if (i >= 2) {
                 space((i - 1) * 2 - 1);
                 for (int j = 1; j <= i; j++) {
-                    System.out.print(" " + j + " ");
+                    System.out.print(j + " ");
                 }
             }
             System.out.print("\n");

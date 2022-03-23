@@ -6,10 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-        p3(5);
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n<=20){
+            p4(n);
+        }
     }
 
     //Hourglass
@@ -17,14 +18,20 @@ public class Main {
         int myLenth = 2 * n + 1;
         int nst = myLenth;
         int space = 0;
+        int myNum = n;
         for (int i = 1; i <= myLenth; i++) {
-
             for (int j = 1; j <= space; j++) {
-                System.out.print("   ");
+                System.out.print("  ");
             }
 
+            myNum = n - space;
             for (int j = 1; j <= nst; j++) {
-                System.out.print(" * ");
+                System.out.print(myNum + " ");
+                if (j<= nst/2){
+                    myNum--;
+                }else{
+                    myNum++;
+                }
             }
 
             System.out.println();
@@ -49,7 +56,7 @@ public class Main {
         for (int i = 1; i <= myLenth; i++) {
             int myN = n;
             for (int j = 0; j <= nst; j++) {
-                System.out.print(myN+" ");
+                System.out.print(myN + " ");
                 myN--;
             }
 
@@ -61,7 +68,7 @@ public class Main {
             myN = secVal;
             //nst - 1 is to print 1 less column
             for (int j = 0; j <= (j == n ? nst - 1 : nst); j++) {
-                System.out.print(myN+" ");
+                System.out.print(myN + " ");
                 myN++;
             }
 
