@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="def04997-11b2-4f08-a119-f470926b7604" name="Changes" comment="inverted hourglass pattern p3 modified">
-      <change beforePath="$PROJECT_DIR$/../day10/src/com/vivekjava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day10/src/com/vivekjava/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vivekjava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vivekjava/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="def04997-11b2-4f08-a119-f470926b7604" name="Changes" comment="check readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +124,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648010862323</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hourglass printed">
+      <created>1648012010298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648012010298</updated>
+    </task>
+    <task id="LOCAL-00004" summary="check readme">
+      <created>1648012031545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648012031545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="check readme">
+      <created>1648012040103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648012040103</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inverted hourglass pattern" />
     <MESSAGE value="inverted hourglass pattern p3 modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="inverted hourglass pattern p3 modified" />
+    <MESSAGE value="hourglass printed" />
+    <MESSAGE value="check readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="check readme" />
   </component>
 </project>
