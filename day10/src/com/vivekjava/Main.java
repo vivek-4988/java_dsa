@@ -8,8 +8,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         //only for odd number
-        //p1(n);
-        p2(n);
+        p1(n);
+        //p2(n);
     }
 
     //second method
