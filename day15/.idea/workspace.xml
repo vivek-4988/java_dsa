@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e086ddf2-4818-49e9-b353-05ec2a3127d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day15.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vivekjava/readme" afterDir="false" />
+    <list default="true" id="e086ddf2-4818-49e9-b353-05ec2a3127d9" name="Changes" comment="main2 , previous code basic calculator , lil change for division">
+      <change afterPath="$PROJECT_DIR$/../day16/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day16/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day16/day16.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vivekjava" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.vivekjava.Main" />
       <module name="day15" />
@@ -100,8 +101,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vivekjava.Main2" />
+      <module name="day15" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vivekjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -115,6 +130,28 @@
       <option name="presentableId" value="Default" />
       <updated>1648380099853</updated>
     </task>
+    <task id="LOCAL-00001" summary="print 3n+2 series till n1">
+      <created>1648383848252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648383848252</updated>
+    </task>
+    <task id="LOCAL-00002" summary="print 3n+2 series till n1">
+      <created>1648383861492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648383861492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="main2 , previous code basic calculator , lil change for division">
+      <created>1648528646033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648528646033</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,5 +164,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="print 3n+2 series till n1" />
+    <MESSAGE value="main2 , previous code basic calculator , lil change for division" />
+    <option name="LAST_COMMIT_MESSAGE" value="main2 , previous code basic calculator , lil change for division" />
   </component>
 </project>
