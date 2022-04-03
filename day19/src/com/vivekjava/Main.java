@@ -5,7 +5,41 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        FahrenheitToCelsius();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(isArmStrongNumber(n));
+    }
+
+    static boolean isArmStrongNumber(int n) {
+        int temp = n;
+        int digits = 0;
+        while (temp > 0) {
+            temp = temp / 10;
+            digits++;
+        }
+
+        temp = n;
+        int last;
+        int sum = 0;
+        while (temp > 0) {
+            last = temp % 10;
+            sum += (Math.pow(last, digits));
+            temp = temp / 10;
+        }
+        if (sum == n) {
+            return true;
+        }
+        return false;
+    }
+
+    static void binaryToDecimal() {
+        Scanner sc = new Scanner(System.in);
+        String n = sc.next();
+        long c = Integer.parseInt(n, 2);
+        System.out.println(c);
+//        do{
+//
+//        }while (n.length()==0);
     }
 
     static void FahrenheitToCelsius() {
@@ -14,9 +48,9 @@ public class Main {
         long max = sc.nextInt();
         long step = sc.nextInt();
 
-        for (long i = min; i <= max ; i+= step) {
+        for (long i = min; i <= max; i += step) {
             long C = ((i - 32) * 5) / 9;
-            System.out.println(i+"\t"+C);
+            System.out.println(i + "\t" + C);
         }
     }
 
