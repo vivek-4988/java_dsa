@@ -5,9 +5,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        countDigits();
+    }
+
+    static void countDigits() {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        System.out.println(isArmStrongNumber(n));
+        long number = sc.nextInt();
+        int digit = sc.nextInt();
+
+        int count = 0;
+        while (number > 0) {
+            long checkNum = number % 10;
+            if (checkNum == digit) {
+                count++;
+            }
+            number = number / 10;
+        }
+        System.out.println(count);
     }
 
     static boolean isArmStrongNumber(int n) {
