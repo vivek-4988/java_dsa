@@ -20,7 +20,50 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int nsp = -1;
+        int nst = (n / 2) + 1;
+        //upper
+        for (int i = nst; i > 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*\t");
+            }
+            for (int j = 1; j <= nsp; j++) {
+                System.out.print(" \t");
+            }
+            if (i == nst) {
+                for (int j = 2; j <= i; j++) {
+                    System.out.print("*\t");
+                }
+            } else {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print("*\t");
+                }
+            }
+            nsp += 2;
+            System.out.println();
+        }
+        //bottom
+        for (int i = 1; i <= nst; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*\t");
+            }
+            for (int j = 1; j <= nsp; j++) {
+                System.out.print(" \t");
+            }
+            if (i == nst) {
+                for (int j = 2; j <= i; j++) {
+                    System.out.print("*\t");
+                }
+            } else {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print("*\t");
+                }
+            }
+            nsp -= 2;
+            System.out.println();
+        }
     }
 
 
