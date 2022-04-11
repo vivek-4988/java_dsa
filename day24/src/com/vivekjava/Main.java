@@ -4,16 +4,24 @@ public class Main {
 
     public static void main(String[] args) {
         //pdiskip(5);
-        System.out.println(power(2,5));
+        System.out.println(fib(8));
+    }
+
+    static int fib(int n) {
+        if (n == 1 || n == 0) {
+            return n;
+        }
+        int fnm = fib(n - 1);
+        int fn2 = fib(n - 2);
+        return fnm + fn2;
     }
 
     static int power(int x, int n) {
-        if (n==0){
+        if (n == 0) {
             return 1;
         }
         int pnm = power(x, n - 1);
-        int pn = x * pnm;
-        return pn;
+        return x * pnm;
     }
 
     static int fact(int n) {
@@ -21,8 +29,7 @@ public class Main {
             return 1;
         }
         int fnm = fact(n - 1);
-        int fn = n * fnm;
-        return fn;
+        return n * fnm;
     }
 
     static void pdiskip(int n) {
