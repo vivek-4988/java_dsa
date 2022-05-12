@@ -5,11 +5,40 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
-    static int[] defaultArray = {10, 5, 20, 30, 25};
+    static int[] arr = {10, 5, 20, 30, 25};
     static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
 
     public static void main(String[] args) {
-        System.out.println(bSearch(101));
+        selectionSort();
+    }
+
+    static void selectionSort() {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j <= arr.length - 1; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
+        }
+        display(arr);
+    }
+
+    static void bubbleSort() {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        display(arr);
     }
 
     static int bSearch(int item) {
@@ -21,7 +50,7 @@ public class Main {
                 lo = med + 1;
             } else if (bArray[med] > item) {
                 hi = med - 1;
-            }else{
+            } else {
                 return med;
             }
         }
@@ -29,8 +58,8 @@ public class Main {
     }
 
     static int linearSearch(int item) {
-        for (int i = 0; i < defaultArray.length; i++) {
-            if (defaultArray[i] == item) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == item) {
                 return i;
             }
         }
@@ -39,9 +68,9 @@ public class Main {
 
     static void maxNumber() {
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < defaultArray.length; i++) {
-            if (defaultArray[i] > max) {
-                max = defaultArray[i];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
         System.out.println(max);
