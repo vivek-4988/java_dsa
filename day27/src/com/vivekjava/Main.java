@@ -4,13 +4,47 @@ import java.util.Scanner;
 
 public class Main {
 
+    static class Pair {
+        int min;
+        int max;
+    }
+
     static Scanner sc = new Scanner(System.in);
     static int[] arr = {1, 2, 2, 2, 2, 3, 3, 3, 9, 11};
-    static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
+//    static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
+    static int[] bArray = {1,2,3,4,5,6,7};
 
     public static void main(String[] args) {
-        lowerBound(2);
-        upperBound(3);
+        reverseArray();
+    }
+
+    static void reverseArray() {
+        int start = 0;
+        int end = bArray.length - 1;
+        while (start < end) {
+            int temp = bArray[start];
+            bArray[start] = bArray[end];
+            bArray[end] = temp;
+            start++;
+            end--;
+        }
+        display(bArray);
+    }
+
+    static void minMax() {
+        Pair pair = new Pair();
+        if (bArray.length >= 1) {
+            pair.max = bArray[0];
+            pair.min = bArray[0];
+        }
+        for (int i = 0; i < bArray.length; i++) {
+            if (bArray[i] > pair.max) {
+                pair.max = bArray[i];
+            } else if (bArray[i] < pair.min) {
+                pair.min = bArray[i];
+            }
+        }
+        System.out.println(pair.max + ":" + pair.min);
     }
 
     static void lowerBound(int data) {
@@ -124,7 +158,6 @@ public class Main {
         }
         System.out.println(max);
     }
-
 
     static void display(int[] ar) {
         System.out.println("My array");
