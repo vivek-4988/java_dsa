@@ -5,11 +5,44 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
-    static int[] arr = {5, -5};
+    static int[] arr = {1, 2, 2, 2, 2, 3, 3, 3, 9, 11};
     static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
 
     public static void main(String[] args) {
-        insertionSort();
+        lowerBound(2);
+        upperBound(3);
+    }
+
+    static void lowerBound(int data) {
+        int low = 0, high = arr.length - 1, ans = -1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == data) {
+                ans = mid;
+                high = mid - 1;
+            } else if (data < arr[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        System.out.println("LB " + ans);
+    }
+
+    static void upperBound(int data) {
+        int low = 0, high = arr.length - 1, ans = -1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == data) {
+                ans = mid;
+                low = mid + 1;
+            } else if (data < arr[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        System.out.println("UB " + ans);
     }
 
     static void insertionSort() {
