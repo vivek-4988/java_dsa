@@ -5,13 +5,28 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
-    static int[] arr = {10, 5, 20, 30, 25};
+    static int[] arr = {5, -5};
     static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
 
     public static void main(String[] args) {
-        selectionSort();
+        insertionSort();
     }
 
+    static void insertionSort() {
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > current) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = current;
+        }
+
+        display(arr);
+    }
+
+    //searching minimum element from the array and swap with minimum
     static void selectionSort() {
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
@@ -27,6 +42,7 @@ public class Main {
         display(arr);
     }
 
+    //check with next index and swap
     static void bubbleSort() {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
