@@ -18,6 +18,7 @@ public class Main {
         reverseArray();
     }
 
+    //revere array
     static void reverseArray() {
         int start = 0;
         int end = bArray.length - 1;
