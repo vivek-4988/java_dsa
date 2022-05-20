@@ -29,7 +29,7 @@ public class Main {
         }
 
         if (maxSum > 0 ){
-            int val = Math.max(maxSum,totalSum-minEndAt);
+            int val = Math.max(maxSum,totalSum-minSum);
             System.out.println(val);
         }else{
             System.out.println(maxSum);
