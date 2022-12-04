@@ -13,9 +13,13 @@ public class Main {
     static int[] arr = {1, 2, 2, 2, 2, 3, 3, 3, 9, 11};
 //    static int[] bArray = {5, 7, 10, 12, 15, 20, 27, 31, 36, 45, 55, 65, 70, 73, 85, 99};
     static int[] bArray = {1,2,3,4,5,6,7};
+    //static int[] arr = {30, 30,30,20,20,20,10,10};
 
-    public static void main(String[] args) {
-        reverseArray();
+    public static void main(String[] args)
+    {
+        lowerBound(2);
+        upperBound(3);
+        //reverseArray();
     }
 
     //revere array
